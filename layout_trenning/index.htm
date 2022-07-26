@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="utf-8"/>
+    <title>MyLayout</title>
+    <link href="./css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="./js/script.js"></script>
+    <script src="./js/jquery-3.6.0min.js"></script>
+</head>
+<body>
+<header id="header">
+    <ul class="ulForNav">
+        <div id="navigation" class="menu">
+            <li class="absoluteBlock"><a href="./index.htm"><img class="imgLink expandOpen mainIcon" id="logoImg"
+                                                                 src="./img/simpleLogo.png"/></a></li>
+            <li class="nav"><a class="navLink" href="#aboutBlock">About us</a></li>
+            <li class="nav"><a class="navLink" href="#helpBlock">Help</a></li>
+            <li class="nav"><a class="navLink" href="#contactBlock">Contact</a></li>
+            <li class="nav"><a class="navLink" href="#userBlock">Pricing</a></li>
+            <li class="nav"><a class="navLink" href="#">Documentation</a></li>
+        </div>
+        <div class="menu dropDown">
+            <button type="button" class="navDropButton">Menu<i class="fa fa-caret-down"></i></button>
+            <div class="hiddenContent">
+                <li class="nav"><a class="navLink" href="#aboutBlock">About us</a></li>
+                <li class="nav"><a class="navLink" href="#helpBlock">Help</a></li>
+                <li class="nav"><a class="navLink" href="#contactBlock">Contact</a></li>
+                <li class="nav"><a class="navLink" href="#">Pricing</a></li>
+                <li class="nav"><a class="navLink" href="#">Documentation</a></li>
+            </div>
+        </div>
+        <div id="contactAndLogin" class="menu">
+            <form id="search_form" action="#">
+                <span class="icon search_icon"><i class="fa fa-search"></i></span>
+                <input type="search" placeholder="Search" name="search" class="search_box">
+            </form>
+            <a id="loginButt" class="button loginButt" href="#" target="_self">Get started</a>
+        </div>
+    </ul>
+</header>
+<main>
+    <div class="slider" id="slider1">
+        <div class="slider_slide slider_slide_active slider_slide_block"
+             style="background-image: url(./img/slide1.png)">
+            <div class="info slider_slide_Right">
+                <h2 class="name_of_slide">plane your life</h2>
+                <h3>Increase your productivity</h3>
+                <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.<br/>
+                    Usu atqui laudem an, insolens gubergren similique est cu.<br/>
+                    Et vel modus congue vituperata.</p>
+            </div>
+        </div>
+        <div class="slider_slide slider_slide_active slider_slide_none" style="background-image: url(./img/slide2.jpg)">
+            <div class="info slider_slide_Right">
+                <h2 class="name_of_slide">save time</h2>
+                <h3>Increase your productivity</h3>
+                <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.<br/>
+                    Usu atqui laudem an, insolens gubergren similique est cu.<br/>
+                    Et vel modus congue vituperata.</p>
+            </div>
+        </div>
+        <div class="slider_slide slider_slide_active slider_slide_none" style="background-image: url(./img/slide3.png)">
+            <div class="info slider_slide_Right">
+                <h2 class="name_of_slide">prioritize correctly</h2>
+                <h3>Increase your productivity</h3>
+                <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.<br/>
+                    Usu atqui laudem an, insolens gubergren similique est cu.<br/>
+                    Et vel modus congue vituperata.</p>
+            </div>
+        </div>
+        <span class="switch_butt left_switch_butt "
+              onclick="slideChange('slider1', 'left', 'slider_slide_active', 'slider_slide_inactive')">&lt</span>
+        <span class="switch_butt right_switch_butt"
+              onclick="slideChange('slider1', 'right', 'slider_slide_active', 'slider_slide_inactive')">&gt</span>
+    </div>
+    <div class="container companies">
+        <ul>
+            <li class="nameOfCompany"><p><a href="#" target="_blank">NAME OF COMPANY</a></p></li>
+            <li class="nameOfCompany"><p><a href="#" target="_blank">NAME OF COMPANY</a></p></li>
+            <li class="nameOfCompany"><p><a href="#" target="_blank">NAME OF COMPANY</a></p></li>
+            <li class="nameOfCompany"><p><a href="#" target="_blank">NAME OF COMPANY</a></p></li>
+            <li class="nameOfCompany"><p><a href="#" target="_blank">NAME OF COMPANY</a></p></li>
+        </ul>
+    </div>
+    <div class="container planBlock">
+        <div class="left desktopInfoBlock">
+            <h3>DESKTOP AND MOBILE APP</h3>
+            <h2>Plan and manage</h2>
+            <p>Brute laoreet efficiendi id his, ea illum nonumes luptatum pro.
+                <br/>Usu atqui laudem an, insolens gubergren similique est cu.
+                <br/>Et vel modus congue vituperata. Solum patrioque no sea.
+                <br/>Mea ex malis mollis oporteat. Eum an expetenda consequat.
+            </p>
+            <a id="videoButt" class="button videoButt" href="#" target="_self">View videos</a>
+        </div>
+        <div class="right">
+            <img id="illustrationImg" class="illustration" src="./img/illustration.png" alt="illustration"/>
+        </div>
+    </div>
+    <div class="container illustration aboutBlock" id="aboutBlock" style="background-image: url(./img/white_clouds.svg)">
+        <div class="wrapper">
+            <h3>ABOUT US</h3>
+            <h2>Read about our app</h2>
+            <div class="aboutApp">
+                <img class="icon" src="./img/Overview.svg">
+                <h4>Overview</h4>
+                <p>Brute laoreet efficiendi<br/> id his, ea illum nonumes<br/> luptatum pro.</p>
+            </div>
+            <div class="aboutApp">
+                <img class="icon" src="./img/Files.svg">
+                <h4>Files</h4>
+                <p>Brute laoreet efficiendi<br/> id his, ea illum nonumes<br/> luptatum pro.</p>
+            </div>
+            <div class="aboutApp">
+                <img class="icon" src="./img/MeetingChats.svg">
+                <h4>Meeting chats</h4>
+                <p>Brute laoreet efficiendi<br/> id his, ea illum nonumes<br/> luptatum pro.</p>
+            </div>
+            <div class="aboutApp">
+                <img class="icon" src="./img/SaveEvents.svg">
+                <h4>Save events</h4>
+                <p>Brute laoreet efficiendi<br/> id his, ea illum nonumes<br/> luptatum pro.</p>
+            </div>
+            <br/>
+            <a id="readMoreButt" class="button readMoreButt" href="#" target="_self">Read more</a>
+        </div>
+    </div>
+    <div class="container container_little">
+        <div class="left" id="statistic1">
+            <img src="./img/IndicatorIcon.png" class="icon"/>
+            <h2>89&#37;</h2>
+            <p>Customers who have <br/>increased their productivity</p>
+        </div>
+        <div class="right" id="statistic2">
+            <img src="./img/personIcon.png" class="icon"/>
+            <h2>3200&plus;</h2>
+            <p>Users who have <br/>used our application</p>
+        </div>
+    </div>
+    <div class="container helpBlock" id="helpBlock">
+        <div>
+            <h3>Customer help</h3>
+            <h2>Frequently asked questions</h2>
+            <div class="helpList">
+                <div class="blockInfo">
+                    <div class="operation">
+                        <div class="plus-minus-toggle collapsed"></div>
+                        <button class="hideButton" id="hideButton1">&#5167;</button>
+                        <h4>Reque insolens in vel?</h4>
+                    </div>
+
+                    <div class="operation-info">
+                        <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.<br/>
+                            Eu usu vidit tractatos, vero tractatos ius an,<br/>
+                            in mel diceret persecuti.
+                        </p>
+                        <a class="button documentationButt" href="#" target="_self">Documentation</a>
+                    </div>
+                </div>
+                <div class="blockInfo">
+                    <div class="operation">
+                        <div class="plus-minus-toggle collapsed"></div>
+                        <button class="hideButton" id="hideButton2">&#5167;</button>
+                        <h4>Vis rebum error graecis ea, id sit postea accusamus?</h4>
+                    </div>
+                    <div class="operation-info">
+                        <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.<br/>
+                            Eu usu vidit tractatos, vero tractatos ius an,<br/>
+                            in mel diceret persecuti.
+                        </p>
+                        <a class="button documentationButt" href="#" target="_self">Documentation</a>
+                    </div>
+                </div>
+                <div class="blockInfo">
+                    <div class="operation">
+                        <div class="plus-minus-toggle collapsed"></div>
+                        <button class="hideButton" id="hideButton3">&#5167;</button>
+                        <h4>Reque insolens in vel?</h4>
+                    </div>
+
+                    <div class="operation-info">
+                        <p>Quidam vocibus eum ne, erat consectetuer voluptatibus ut nam.<br/>
+                            Eu usu vidit tractatos, vero tractatos ius an,<br/>
+                            in mel diceret persecuti.
+                        </p>
+                        <a class="button documentationButt" href="#" target="_self">Documentation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container contactBlock" id="contactBlock">
+        <div class="left">
+            <h2>Contact us</h2>
+            <h3>Sign up for newsletter</h3>
+            <p>Cu qui soleat partiendo urbanitas.<br/>
+                Eum aperiri indoctum eu, homero alterum.
+            </p>
+        </div>
+        <div class="right contactEmail">
+            <form name="contactForm" class="contactForm" method="post">
+                <input name="email" id="email" class="email inputAfterLabel" type="email" onchange="ValidMail();" placeholder="Email adress"/>
+                <label name="labelEMail" id="labelEMail" class="labelInfo">&nbsp;</label>
+                <a id="emailButt" class="button emailButt" href="#" target="_self">Save me</a>
+            </form>
+            <input id="checkboxInput" type="checkbox" class="checkbox" />
+            <label for="checkboxInput" id="labelCheckbox">I agree to the newsletter</label>
+        </div>
+    </div>
+    <div class="container userBlock" id="userBlock">
+        <h1>USER BLOCK</h1>
+        <h2>h2 title</h2>
+        <h3>h3 title</h3>
+        <h4>h4 title</h4>
+        <h5>h5 title</h5>
+        <h6>h6 title</h6>
+        <p>Table with some information</p>
+        <div class="scroll-table">
+            <table>
+                <thead>
+                <tr>
+                    <th>Name of plan</th>
+                    <th>Days</th>
+                    <th>Coach</th>
+                    <th>Price</th>
+                    <th>Certificate</th>
+                </tr>
+                </thead>
+            </table>
+            <div class="scroll-table-body">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>EasyMode</td>
+                        <td>31</td>
+                        <td>Yurii F.T.</td>
+                        <td>300&#36;</td>
+                        <td>No</td>
+                    </tr>
+                    <tr>
+                        <td>MediumMode</td>
+                        <td>50</td>
+                        <td>Ivanov I.I.</td>
+                        <td>500&#36;</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>HardMode</td>
+                        <td>120</td>
+                        <td>Abram R.N., Alivia S.O.</td>
+                        <td>1000&#36;</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>HellMode</td>
+                        <td>150</td>
+                        <td>Scarlett A.T.</td>
+                        <td>2000&#36;</td>
+                        <td>Yes</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    <tr>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                        <td>...</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div>
+            <div class="article">
+                <img src="./img/smthng.jpg" class="articleImg">
+                <h3 class="nameOfArticle">Name of article</h3>
+                <p class="articleContent">
+                    Some text Some text Some text<br/>
+                    Some text Some text Some text
+                </p>
+            </div>
+            <div class="article">
+                <img src="./img/smthng.jpg" class="articleImg">
+                <h3 class="nameOfArticle">Name of article</h3>
+                <p class="articleContent">
+                    Some text Some text Some text<br/>
+                    Some text Some text Some text
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container footerBlock">
+        <ul class="mediaLink" >
+            <li><a href="#" target="_blank"><img class="imgLink" id="vk" src="./img/vkIcon.png"/></a>
+            </li>
+            <li><a href="#" target="_blank"><img class="imgLink" id="twitter" src="./img/twitterIcon.png"/></a>
+            </li>
+            <li><a href="#" target="_blank"><img class="imgLink" id="instagram" src="./img/instagramIcon.png"/></a>
+            </li>
+            <li><a href="#" target="_blank"><img class="imgLink" id="facebook" src="./img/facebookIcon.png"/></a>
+            </li>
+        </ul>
+        <p class="copyright">(с) created by жопа</p>
+    </div>
+</main>
+
+<script type="text/javascript">
+    $(function () {
+        $('.operation').on('click', function () {
+            var blockInfo = $(this).closest('.blockInfo');
+            blockInfo.find('.plus-minus-toggle').toggleClass('collapsed');
+            blockInfo.find('.operation-info').slideToggle(400);
+            //blockInfo.find('.hideButton').setAttribute("transform", "rotate(180deg)"); //не робит
+        });
+    });
+</script>
+</body>
+</html>
